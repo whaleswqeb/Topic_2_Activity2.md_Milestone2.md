@@ -1,8 +1,8 @@
 **Milestone 2: Refined Project Proposal**
 
-**Course:** JavaScript Web Application Development
-**Application Name:** Community Resource & Event Management System
-**Author:** ADEWALE OLAOMO   
+**Course:** JavaScript Web Application Development  
+**Application Name:** Community Resource & Event Management System  
+**Author:** ADEWALE OLAOMO  
 **Date:** 22 Feb 2026
 
 # **Project Proposal**
@@ -16,7 +16,6 @@ that helps churches, non profits, student groups and local clubs keep
 track of shared items plus plan gatherings. Small groups often use paper
 lists or spreadsheets, a practice that produces double bookings, hidden
 shortages and last minute chaos.
-
 The system gathers every item in one place - rooms, chairs, sound gear,
 books or digital files. Any approved person sees what is free, reserves
 it but also links it to a meeting, class or party. A single calendar and
@@ -35,95 +34,71 @@ The primary domain of the application is the management of community
 resource and event management. The primary product of the application is
 the Resource, which may be anything the organization owns or shares.
 
-Examples of the resource include:
-
-o Meeting rooms
-
-o Projectors and audio equipment
-
-o Books and other study materials
-
-o Sports and event equipment
-
+Examples of the resource include:  
+o Meeting rooms  
+o Projectors and audio equipment  
+o Books and other study materials  
+o Sports and event equipment  
 o Digital equipment
 
 Besides the resource, the application also manages the concept of
 Events, which may be anything the community wants to do, like a meeting,
 workshop, prayer, or even training.
-
 The application is simple, practical, and realistic. It avoids the
 complexity of enterprise software.
 
 ## **Functionality Requirements (User Stories)**
 
 ### **Resource Management**
-
-### As a user, I want to:
-
-### View a list of all resources (so I know what's available).
-
-### View detailed information about a resource (so I understand its status and where it's located).
-
-### Add new resources (so they can be tracked in the system).
-
-### Update the resource details (so the information stays accurate).
-
-### 5. Delete a resource that is not being used anymore.
+As a user, I want to:  
+1.View a list of all resources (so I know what's available).  
+2.View detailed information about a resource (so I understand its status and where it's located).  
+3.Add new resources (so they can be tracked in the system).  
+4.Update the resource details (so the information stays accurate).  
+5.Delete a resource that is not being used anymore.
 
 ### **Event Management**
 
-### To help our users:
+To help our users:
 
-### To attach an event to the community, we want the capability to add events to a calendar of organized events
-
-### To have a clear view of what events are coming up
-
-### To create schedules for resources being used and identify potential conflicts
-
-### To make changes to scheduled events as they change
+1.To attach an event to the community, we want the capability to add events to a calendar of organized events  
+2.To have a clear view of what events are coming up  
+3.To create schedules for resources being used and identify potential conflicts
+4.To make changes to scheduled events as they change
 
 ### **System Requirements**
 
-9.  I would like to check any incoming data for errors before I save it,
-    so I do not store any bad data.
-
-10. I intend to create a way to save data to a database that is a
-    relational database system.
-
-11. I will create a means of allowing both my angular application and my
-    react application to access my backend system via a RESTful style
-    API.
+1.I would like to check any incoming data for errors before I save it,
+so I do not store any bad data.  
+2.I intend to create a way to save data to a database that is a
+relational database system.  
+3.I will create a means of allowing both my angular application and my
+react application to access my backend system via a RESTful style
+API.
 
 ## **Frameworks, Technologies, and Tools**
 
 ### **Backend**
 
 - Node.js
-
 - Express.js
-
 - RESTful API architecture
 
 ### **Frontend**
 
 - Angular (one client application)
-
 - React (second client application)
-
 - HTML, CSS, and TypeScript / JavaScript
 
 ### **Database**
 
 - MySQL
-
 - Relational schema with primary and foreign keys
 
 ### **Development Tools**
 
 - Visual Studio Code
-
 - Git and GitHub for version control
-
 - Postman for API testing
 
 ### **System Architecture**
@@ -183,7 +158,6 @@ complexity of enterprise software.
 ### **Relationships**
 
 - One Resource can be assigned to multiple Events.
-
 - Each Event references one Resource.
 
 ## **Initial UML Class Diagram**
@@ -199,25 +173,19 @@ The application will follow a layered architecture:
 ### **Presentation Layer**
 
 - Angular and React front-end applications
-
 - Forms and tables for user interaction
-
 - REST API consumption
 
 ### **Business Layer**
 
 - Express controllers and services
-
 - Validation and business rules
-
 - Resource availability checks
 
 ### **Persistence Layer**
 
 - MySQL database
-
 - DAO-style database access
-
 - Relational schema with foreign keys
 
 This architecture ensures separation of concerns, scalability, and
@@ -279,8 +247,7 @@ The API strictly follows REST architectural conventions and best practices:
 
 ## 1. Plural Resources
 
-All endpoints use plural nouns to represent collections of resources:
-
+All endpoints use plural nouns to represent collections of resources  
 - `/resources`
 - `/events`
 
@@ -309,14 +276,11 @@ The system uses HTTP methods to define actions instead of including verbs in the
 - **PUT** → Update existing data
 - **DELETE** → Remove data
 
-This ensures clarity, standardization, and adherence to REST principles.
-
----
+## This ensures clarity, standardization, and adherence to REST principles.
 
 # Image Handling Strategy
 
 Instead of storing image files directly in the database, the system stores image URLs retrieved from Unsplash.
-
 This approach offers several advantages:
 
 - Reduces database storage requirements
@@ -324,12 +288,8 @@ This approach offers several advantages:
 - Simplifies backend implementation
 - Allows direct frontend rendering using `<img src="image_url">`
 
-By storing only the image URL, the system remains lightweight and scalable.
-
----
+## By storing only the image URL, the system remains lightweight and scalable.
 
 # Conclusion
-
 The backend structure of the **Community Resource & Event Management System** has been developed as a scalable solution for providing common services to handle resource sharing and schedule events.
-
 The new design enhances the adherence to REST principles by defining plural naming conventions for resources, creating hierarchical URLs, and defining proper HTTP verbs. The API endpoints are now clearly defined with their associated data and through the proper use of normalized data in the database design.
