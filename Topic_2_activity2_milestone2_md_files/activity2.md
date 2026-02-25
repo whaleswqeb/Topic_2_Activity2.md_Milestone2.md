@@ -26,7 +26,7 @@ Page when Angular is generated.
 
 
 **Activity 2 Code Git URL:**
-https://github.com/whaleswqeb/Topic_2_Activity-2_code
+https://github.com/whaleswqeb/Topic_2_Activity-2_code/tree/main/Activity_2_code
 
 **TOOL INSTALLATION**
 
